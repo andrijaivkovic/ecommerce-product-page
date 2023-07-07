@@ -75,6 +75,7 @@ const products = [
 ];
 
 const App = () => {
+  // eslint-disable-next-line
   const [selectedProduct, setSelectedProduct] = useState(products[0]);
   const [shoppingCart, setShoppingCart] = useState([]);
 
