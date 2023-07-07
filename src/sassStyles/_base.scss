@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 62.5%; // makes 1rem = 10pp
+
+  @media only screen and (max-width: $breakpoint-desktop-medium) and (min-width: $breakpoint-desktop) {
+    font-size: 52%;
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop-large) {
+    font-size: 70%;
+  }
+}
+
+body {
+  @include flex-column;
+
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  min-height: 100vh;
+
+  background-color: $color-neutral-white;
+
+  padding-bottom: 6rem;
+
+  @include mediaQuery(desktop) {
+    padding: 0 15vw;
+    margin: unset;
+  }
+}
+
+main {
+  @include flex-column;
+  align-items: center;
+}

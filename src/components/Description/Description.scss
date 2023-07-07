@@ -1,0 +1,15 @@
+.description {
+  @include flex-column;
+  gap: 2rem;
+  padding: 2rem 2rem;
+
+  @include mediaQuery(desktop) {
+    padding: 2rem 0;
+  }
+
+  & > p {
+    @include mediaQuery(desktop) {
+      padding-top: 2rem;
+    }
+  }
+}

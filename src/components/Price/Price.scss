@@ -1,0 +1,44 @@
+.price {
+  @include flex-row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  @include mediaQuery(desktop) {
+    @include flex-column;
+    padding: 1rem 0;
+    align-items: flex-start;
+  }
+
+  &__left,
+  &__right {
+    @include flex-row;
+    align-items: center;
+  }
+
+  &__left {
+    gap: 2rem;
+  }
+
+  &__current {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-neutral-black;
+  }
+
+  &__discount {
+    font-weight: 700;
+    color: $color-primary-orange;
+    padding: 0.25rem 1.5rem;
+    background-color: $color-primary-pl-orange;
+    border-radius: 1rem;
+  }
+
+  &__previous {
+    color: $color-neutral-gry-blue;
+    font-weight: 700;
+    text-decoration: line-through;
+  }
+}

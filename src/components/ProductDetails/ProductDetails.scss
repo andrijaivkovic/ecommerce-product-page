@@ -1,0 +1,34 @@
+.product-details {
+  @include flex-column;
+  @include flex-center;
+
+  max-width: 50rem;
+
+  gap: 3rem;
+
+  @include mediaQuery(desktop) {
+    @include flex-row;
+
+    gap: 5vw;
+
+    padding: 0rem 7vw;
+    margin-top: 6rem;
+
+    max-width: unset;
+  }
+
+  &__container {
+    @include flex-column;
+
+    &--bottom {
+      @include flex-column;
+      padding: 0 2rem;
+
+      @include mediaQuery(desktop) {
+        padding: unset;
+        gap: 2rem;
+        @include flex-row;
+      }
+    }
+  }
+}
