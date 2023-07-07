@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://ecommerce-product-page-ai.netlify.app](https://ecommerce-product-page-ai.netlify.app)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/e-commerce-product-page-component-built-using-reactjs-and-scss-e68PndoEV6)
+- Live Site URL: [Link](https://ecommerce-product-page-ai.netlify.app)
 
 ## My process
 
